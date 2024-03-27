@@ -1,0 +1,17 @@
+﻿@model List<pagina.Models.Empleado>
+<h1>Marcas</h1>
+<table class="table">
+    <thead>
+        <tr>
+            <th>Nombre</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var brand in Model)
+        {
+            <tr>
+                <td>@Html.DisplayFor(m=>brand.Nombre)</td>
+            </tr>
+        }
+    </tbody>
+</table>
